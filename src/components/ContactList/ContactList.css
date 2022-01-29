@@ -1,0 +1,142 @@
+.ContactList {
+    height: 90vh;
+}
+
+.search-sort-container {
+    background-color: rgb(236, 235, 235);
+    height: 17%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(29, 29, 29);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.labels {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.input-areas {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.search-input{
+    height:40%;
+}
+
+.input-areas input {
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 2px rgb(184, 184, 184);
+}
+
+.search-input input {
+    text-indent: 50px;
+    background-image: url("../Images/search.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left;
+    background-position-x: 15px;
+    transition:0.2s;
+    padding: 0;
+}
+
+.search-input input:focus {
+    background-image: none;
+    text-indent: 15px;
+}
+
+.sort-select {
+    height: 40%;
+}
+
+.input-areas select {
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 2px rgb(184, 184, 184);
+    padding-left: 17px;
+    font-size: 16px;
+    color: rgb(172, 169, 169);
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../Images/selectArrow.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: right;
+    background-position-x: 95%;
+    background-size: 15px;
+}
+.contacts-container{
+    height: 83%;
+    display: flex;
+    flex-flow: column;
+    overflow:auto;
+}
+
+
+
+.ContactElement {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.ContactElement .thumbnail-img{
+    width: 60px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.ContactElement::before {
+    margin: 0;
+    content: "";
+    position: absolute;    
+    left: 5%;
+    bottom: 0;
+    height: 1px;
+    width: 90%;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.info-arrow {
+    position: absolute;
+    right: 8%;
+    height: 25px;
+    color: gray;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+  a {
+      color: black;
+  }
